@@ -51,7 +51,7 @@ Panchielito/
 
 ##  Autor
 
-Joaquin Aburto Sanchez
-Maximiliano Ruiz Romero
+-Joaquin Aburto Sanchez
+-Maximiliano Ruiz Romero
 
 Desarrollado como proyecto académico en **CETI Tonalá**, 2025.
