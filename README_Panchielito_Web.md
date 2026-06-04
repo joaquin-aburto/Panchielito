@@ -1,8 +1,8 @@
-# 🥐 Panchielito — Sitio Web de Panadería
+#  Panchielito — Sitio Web de Panadería
 
 Aplicación web para una panadería artesanal que permite a los clientes explorar el catálogo de productos, gestionar su carrito de compras y realizar pedidos en línea.
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 - Catálogo de productos organizado por categorías (Bizcocho, Danés, Hojaldre)
 - Sistema de autenticación de usuarios con sesiones PHP
@@ -11,7 +11,7 @@ Aplicación web para una panadería artesanal que permite a los clientes explora
 - Panel de administración para gestión de productos
 - Diseño responsive con parallax y carousel de productos más vendidos
 
-## 🛠️ Tecnologías
+##  Tecnologías
 
 | Capa | Tecnología |
 |------|-----------|
@@ -20,7 +20,7 @@ Aplicación web para una panadería artesanal que permite a los clientes explora
 | Estilos | CSS modular, Google Fonts, Font Awesome |
 | Datos | JSON, MySQL |
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 Panchielito/
@@ -35,7 +35,7 @@ Panchielito/
 └── img/                    # Recursos gráficos
 ```
 
-## ⚙️ Instalación local
+##  Instalación local
 
 1. Clona el repositorio:
    ```bash
@@ -45,10 +45,13 @@ Panchielito/
 3. Importa la base de datos desde `/database/panchielito.sql`
 4. Accede desde `http://localhost/Panchielito`
 
-## 📸 Capturas
+##  Capturas
 
 > *Próximamente*
 
-## 👨‍💻 Autor
+##  Autor
+
+Joaquin Aburto Sanchez
+Maximiliano Ruiz Romero
 
 Desarrollado como proyecto académico en **CETI Tonalá**, 2025.
