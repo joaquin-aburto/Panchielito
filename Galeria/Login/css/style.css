@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7E8E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Video de fondo */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+/* Superposición para mejorar la legibilidad */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Capa semitransparente */
+    z-index: 0;
+}
+
+/* Contenedor principal */
+.container {
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 209, 193, 0.9); /* Fondo con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Imagen de encabezado */
+.header-image {
+    width: 50%; 
+    border-radius: 8px;
+    animation: bounce 1.5s ease infinite alternate;
+}
+
+/* Submenú */
+.submenu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.submenu-btn {
+    background-color: #A23E48;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submenu-btn:hover {
+    background-color: #8A2F3B;
+    transform: scale(1.05);
+}
+
+/* Estilos de formularios */
+.hidden {
+    display: none; /* Ocultar formularios */
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    color: #A23E48;
+    margin-top: 10px;
+}
+
+.formulario input, .formulario select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #A23E48;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.formulario input:focus, .formulario select:focus {
+    outline: none;
+    transform: scale(1.03);
+}
+
+/* Estilos de los botones */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.submit-btn, .reset-btn {
+    background-color: #A23E48;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 45%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover, .reset-btn:hover {
+    background-color: #8A2F3B;
+    transform: scale(1.05);
+}
+
+.submit-btn:active, .reset-btn:active {
+    transform: scale(1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .submenu-btn {
+        padding: 8px 10px;
+    }
+
+    .formulario input, .formulario select {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "40": [
+        {
+            "nombre": "Bigote de Chocolate",
+            "precio": 20,
+            "cantidad": 3
+        }
+    ],
+    "9": [
+        {
+            "nombre": "Picon de Ate",
+            "precio": 15.5,
+            "cantidad": 2
+        },
+        {
+            "nombre": "Orejitas",
+            "precio": 12,
+            "cantidad": 3
+        }
+    ],
+    "43": [
+        {
+            "nombre": "Concha de Chocolate",
+            "precio": 22,
+            "cantidad": 3
+        }
+    ],
+    "34": [
+        {
+            "nombre": "Dona de Az\u00facar",
+            "precio": 19.8,
+            "cantidad": 2
+        },
+        {
+            "nombre": "Dona de Chocolate",
+            "precio": 22.5,
+            "cantidad": 3
+        }
+    ],
+    "2": [
+        {
+            "nombre": "Picon de Ate",
+            "precio": 15.5,
+            "cantidad": 1
+        },
+        {
+            "nombre": "Bigote de Chocolate",
+            "precio": 20,
+            "cantidad": 2
+        },
+        {
+            "nombre": "Rol de Canela",
+            "precio": 28.75,
+            "cantidad": 1
+        },
+        {
+            "nombre": "Novia",
+            "precio": 24.99,
+            "cantidad": 1
+        },
+        {
+            "nombre": "Milhojas",
+            "precio": 20,
+            "cantidad": 1
+        }
+    ]
+}

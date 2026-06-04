@@ -1,0 +1,266 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
+  color: var(--text-color);
+}
+/* Admin Panel Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f8f5f5;
+  color: #333;
+  font-size: 1rem;
+  padding: 25px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #6d0000;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #a83232;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+  display: flex;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #a83232;
+  gap: 5px;
+}
+
+.nav-tabs a {
+  padding: 14px 24px;
+  text-decoration: none;
+  color: #6d0000;
+  margin-right: 5px;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background-color: #f8f0f0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+  letter-spacing: 0.5px;
+}
+
+.nav-tabs a.active {
+  background-color: #a83232;
+  color: white;
+  border-bottom-color: white;
+  position: relative;
+  z-index: 1;
+  transform: translateY(-3px);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #a83232;
+}
+
+.nav-tabs a:hover:not(.active) {
+  background-color: #f8e0e0;
+  transform: translateY(-2px);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fffde7;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+thead {
+  background-color: #781f1f;
+  color: white;
+}
+
+th {
+  padding: 18px 12px;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #eee;
+  transition: all 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #fff8e1;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Terms and Conditions Status */
+.terms-accepted {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);
+}
+
+.terms-not-accepted {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(198, 40, 40, 0.1);
+}
+
+/* Action Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 4px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #a83232;
+  color: white;
+}
+
+.edit:hover {
+  background-color: #922b21;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.delete {
+  background-color: #6d0000;
+  color: white;
+}
+
+.delete:hover {
+  background-color: #5a0000;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  table {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 992px) {
+  th,
+  td {
+    padding: 12px 10px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    padding-bottom: 12px;
+  }
+
+  .nav-tabs a {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+  
+  body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    border-bottom: none;
+    gap: 8px;
+  }
+
+  .nav-tabs a {
+    margin-bottom: 0;
+    border-radius: 6px;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .nav-tabs a.active {
+    border: none;
+    transform: translateY(0);
+  }
+  
+  .nav-tabs a.active::after {
+    display: none;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+  }
+  
+  th, td {
+    padding: 10px 8px;
+  }
+}

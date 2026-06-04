@@ -1,0 +1,83 @@
+.promocional {
+    background-image: linear-gradient(100deg, #000, #00000020), url('../img/banner.jpg');
+    height: 60rem; /* Altura inicial */
+    background-size: cover; /* Mantiene la imagen en proporción */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
+  color: var(--text-color);
+}
+.hero-content {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 15rem 2rem; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    height: 100%; 
+}
+
+.hero-content p {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.hero-content h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero-content a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6347; 
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 760px) {
+    .promocional {
+        height: 50rem; 
+    }
+
+    .hero-content {
+        padding: 10rem 1rem; 
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem; 
+    }
+
+    .hero-content p {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 400px) {
+    .promocional {
+        height: 40rem; 
+    }
+
+    .hero-content h2 {
+        font-size: 2rem; 
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; 
+    }
+
+    .hero-content a {
+        padding: 0.8rem 2rem; 
+    }
+}

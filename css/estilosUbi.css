@@ -1,0 +1,39 @@
+/* Estilos para la sección Parallax */
+.parallax {
+    position: relative;
+    background-image: url('../img/parallax.png'); /* Imagen de fondo de la panadería */
+    background-attachment: fixed; /* Crea el efecto parallax */
+    background-size: cover;
+    background-position: center center;
+    height: 400px; /* Altura de la imagen de fondo */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilo para el contenido sobre la imagen */
+  .parallax-content {
+    z-index: 2;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra para el texto */
+  }
+  
+  /* Ajustes para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .parallax-content h2 {
+      font-size: 1.5em; /* Reducir tamaño del título en móviles */
+    }
+  
+    .parallax-content p {
+      font-size: 1em; /* Reducir tamaño del texto en móviles */
+    }
+  
+    .parallax {
+      height: 300px; /* Reducir altura en pantallas más pequeñas */
+    }
+  }
+  
